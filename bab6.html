@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Selector CSS</title>
+    <!-- Menghubungkan ke file CSS Anda -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Mencocokkan Selector: nav a -->
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#blog">Blog</a>
+        <a href="#galeri">Galeri</a>
+    </nav>
+
+    <!-- 2. Mencocokkan Selector: .menu > li -->
+    <ul class="menu">
+        <li>Menu Utama 1</li>
+        <li>Menu Utama 2</li>
+        <li>Menu Utama 3</li>
+    </ul>
+
+    <!-- 3. Mencocokkan Selector: h2::before dan h2::after -->
+    <h2>Judul Artikel Utama</h2>
+
+    <!-- 4. Mencocokkan Selector: p.artikel::first-letter -->
+    <p class="artikel">
+        HTML (HyperText Markup Language) adalah bahasa standar untuk membuat halaman web. 
+        Dengan menggabungkan HTML dan CSS, kita bisa mengatur struktur sekaligus tampilan 
+        visual website agar terlihat menarik dan interaktif bagi pengguna.
+    </p>
+
+    <!-- 5. Mencocokkan Selector: tr:nth-child(even) dan tr:nth-child(odd) -->
+    <table>
+        <thead>
+            <tr>
+                <th>Produk</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kopi Susu</td>
+                <td>Rp 15.000</td>
+            </tr>
+            <tr>
+                <td>Teh Manis</td>
+                <td>Rp 5.000</td>
+            </tr>
+            <tr>
+                <td>Roti Bakar</td>
+                <td>Rp 12.000</td>
+            </tr>
+            <tr>
+                <td>Kentang Goreng</td>
+                <td>Rp 10.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 6. Mencocokkan Selector: li:nth-child(3n+1) -->
+    <ul>
+        <li>Baris 1 (Tebal karena 3(0)+1 = 1)</li>
+        <li>Baris 2</li>
+        <li>Baris 3</li>
+        <li>Baris 4 (Tebal karena 3(1)+1 = 4)</li>
+        <li>Baris 5</li>
+        <li>Baris 6</li>
+        <li>Baris 7 (Tebal karena 3(2)+1 = 7)</li>
+    </ul>
+
+    <!-- 7. Mencocokkan Selector: input:focus, .tombol:hover, dan .tombol:active -->
+    <form action="#" method="POST" style="margin-top: 20px;">
+        <label for="pencarian">Cari Sesuatu:</label><br>
+        <input type="text" id="pencarian" placeholder="Klik di sini untuk efek focus...">
+        <br><br>
+        <button type="submit" class="tombol">Klik Tombol</button>
+    </form>
+
+</body>
+</html>
